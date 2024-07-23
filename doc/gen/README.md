@@ -23,11 +23,13 @@ Stackup:
 | Name                 | Type                 | Color            | Thickness | Material        | Epsilon_r | Loss tangent |
 |----------------------|----------------------|------------------|-----------|-----------------|-----------|--------------|
 | F.SilkS              | Top Silk Screen      |                  |           |                 |           |              |
+| F.Paste              | Top Solder Paste     |                  |           |                 |           |              |
 | F.Mask               | Top Solder Mask      | Green            |        10 |                 |           |              |
 | F.Cu                 | copper               |                  |        35 |                 |           |              |
 | dielectric 1         | core                 |                  |       800 | FR4             |       4.5 |        0.020 |
 | B.Cu                 | copper               |                  |        35 |                 |           |              |
 | B.Mask               | Bottom Solder Mask   | Green            |        10 |                 |           |              |
+| B.Paste              | Bottom Solder Paste  |                  |           |                 |           |              |
 | B.SilkS              | Bottom Silk Screen   |                  |           |                 |           |              |
 
 # Important sizes
@@ -41,7 +43,7 @@ Track width: 0.3 mm (12 mils)
 Drill: 0.5 mm (20 mils)
 
 - Vias: 0.5 mm (20 mils) [Design: 0.4 mm (16 mils)]
-- Pads: 1.0 mm (39 mils)
+- Pads: 3.0 mm (118 mils)
 - The above values are real drill sizes, they add 0.1 mm (4 mils) to plated holes (PTH)
 
 Via: 0.8/0.4 mm (31/16 mils)
@@ -49,7 +51,7 @@ Via: 0.8/0.4 mm (31/16 mils)
 - By design rules: 0.4/0.3 mm (16/12 mils)
 - Micro via: yes [0.2/0.1 mm (8/4 mils)]
 - Buried/blind via: yes
-- Total: 36 (thru: 36 buried/blind: 0 micro: 0)
+- Total: 27 (thru: 27 buried/blind: 0 micro: 0)
 
 Outer Annular Ring: 0.15 mm (6 mils)
 
@@ -64,7 +66,7 @@ Eurocircuits class: 4B
 Components count: (SMD/THT)
 
 - Top: 1/6 (SMD + THT)
-- Bottom: 16/1 (SMD + THT)
+- Bottom: 12/0 (SMD)
 
 Defined tracks:
 
@@ -75,19 +77,19 @@ Defined tracks:
 
 Used tracks:
 
-- 0.3 mm (12 mils) (54) defined: yes
-- 0.4 mm (16 mils) (111) defined: yes
+- 0.3 mm (12 mils) (15) defined: yes
+- 0.4 mm (16 mils) (75) defined: yes
+- 0.5 mm (20 mils) (12) defined: yes
 
 Defined vias:
 
 
 Used vias:
 
-- 0.8/0.4 mm (31/16 mils) (Count: 36, Aspect: 1.1 A) defined: no
+- 0.8/0.4 mm (31/16 mils) (Count: 27, Aspect: 1.1 A) defined: no
 
 Holes (excluding vias):
 
-- 1.0 mm (39 mils) (12)
 - 3.0 mm (118 mils) (6)
 
 Oval holes:
@@ -95,10 +97,23 @@ Oval holes:
 
 Drill tools (including vias and computing adjusts and rounding):
 
-- 0.5 mm (20 mils) (36)
-- 1.0 mm (39 mils) (12)
+- 0.5 mm (20 mils) (27)
 - 3.0 mm (118 mils) (6)
 
+Solder paste stats:
+
+Using a paste with 87.75 % alloy, that has an specific gravity for the alloy of 7.4 g/cm³
+and 1.0 g/cm³ for the flux. This paste has an specific gravity of  4.15 g/cm³.
+
+The stencil thickness is  0.12 mm.
+
+| Side   | Pads with paste | Area [mm²] | Paste [g] |
+|--------|-----------------|------------|-----------|
+| Top    |               6 |       9.28 |      0.05 |
+| Bottom |              33 |      30.21 |      0.15 |
+| Total  |              39 |      39.48 |      0.20 |
+
+Note: this is just an approximation to the theoretical value. Margins of the solder mask and waste aren't computed.
 
 
 
