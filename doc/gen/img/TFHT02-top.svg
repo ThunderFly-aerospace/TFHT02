@@ -390,7 +390,7 @@
 </g>
 <g style="fill: none;stroke: #212020;stroke-width: 0.2000;stroke-opacity: 1;stroke-linecap: round;stroke-linejoin: round">
 <g transform="rotate(-90.000000 138.6710 109.3360)">
-<text x="138.6710" y="109.9360" textLength="4.1314" font-size="1.6000" lengthAdjust="spacingAndGlyphs" text-anchor="start" opacity="0">PWR</text>
+<text x="138.6710" y="109.9360" textLength="4.1314" font-size="1.6000" lengthAdjust="spacingAndGlyphs" text-anchor="start" opacity="0" stroke-opacity="0">PWR</text>
 </g>
 <g class="stroked-text"><desc>PWR</desc>
 <path d="M139.2157 108.9187 L138.0157 108.9187 "/>
@@ -420,7 +420,7 @@
 <path d="M138.6443 105.8901 L138.6443 106.3473 "/>
 </g></g>
 <g style="fill: none;stroke: #212020;stroke-width: 0.3000;stroke-opacity: 1;stroke-linecap: round;stroke-linejoin: round">
-<text x="150.6598" y="113.4658" textLength="8.6876" font-size="1.7333" lengthAdjust="spacingAndGlyphs" text-anchor="middle" opacity="0">TFHT02A</text>
+<text x="150.6598" y="113.4658" textLength="8.6876" font-size="1.7333" lengthAdjust="spacingAndGlyphs" text-anchor="middle" opacity="0" stroke-opacity="0">TFHT02A</text>
 <g class="stroked-text"><desc>TFHT02A</desc>
 <path d="M146.7598 112.1016 L147.5027 112.1016 "/>
 <path d="M147.1312 113.4016 L147.1312 112.1016 "/>
@@ -468,7 +468,7 @@
 </g></g>
 <g style="fill: none;stroke: #212020;stroke-width: 0.1500;stroke-opacity: 1;stroke-linecap: round;stroke-linejoin: round">
 <g transform="rotate(-90.000000 137.4712 118.3530)">
-<text x="137.4712" y="118.8530" textLength="1.9643" font-size="1.3333" lengthAdjust="spacingAndGlyphs" text-anchor="middle" opacity="0">J2</text>
+<text x="137.4712" y="118.8530" textLength="1.9643" font-size="1.3333" lengthAdjust="spacingAndGlyphs" text-anchor="middle" opacity="0" stroke-opacity="0">J2</text>
 </g>
 <g class="stroked-text"><desc>J2</desc>
 <path d="M136.9260 118.6863 L137.6403 118.6863 "/>
