@@ -1,16 +1,10 @@
-
-
 # TFHT02 - Miniature UAV Humidity and Temperature Sensor
 
-[![Kicad](https://github.com/ThunderFly-aerospace/TFHT01/actions/workflows/kicad_outputs.yml/badge.svg?branch=TFHT01B)](https://github.com/ThunderFly-aerospace/TFHT01/actions/workflows/kicad_outputs.yml)
+[![Kicad - production files generator](https://github.com/ThunderFly-aerospace/TFHT02/actions/workflows/kicad_outputs.yml/badge.svg)](https://github.com/ThunderFly-aerospace/TFHT02/actions/workflows/kicad_outputs.yml)
 
 The TFHT02 hygrometer sensor offers flexible integration options. It can be directly connected to a Pixhawk autopilot with PX4 firmware, or it can be used as a sensor for the [TF-ATMON monitoring system](https://www.thunderfly.cz/tf-atmon.html).
 
 Sensors mounted on UAVs can be used for a variety of purposes. TFHT02 can measure air temperature and humidity, which can be used for meteorological purposes to estimate whether icing may form on aerodynamic surfaces. It could also be used to determine if the flight is conducted within the operating range of the drone. Another use can be to measure the temperature of selected UAV components, for example, the temperature of batteries, ESC, motor, or some bearings.
-
-![TFHT02A top view](doc/gen/img/TFHT02-top.png)
-
-![TFHT02A bottom view](doc/gen/img/TFHT02-bottom.png)
 
 ## Where to get it?
 
@@ -41,45 +35,47 @@ The TFHT01 is commercially available from [ThunderFly s.r.o.](https://www.thunde
 
 The TFHT02 sensor could be used for [direct atmospheric sounding](https://en.wikipedia.org/wiki/Atmospheric_sounding). Here is an example of measured data taken by [TF-G2 autogyro](https://www.thunderfly.cz/tf-g2.html).
 
-![TFHT01A atmospheric profiling](/doc/img/TFHT_vertical_profile_measurement.png)
+![TFHT02A atmospheric profiling](/doc/img/TFHT_vertical_profile_measurement.png)
 
 ## Design
 
-![TFHT01A top view](/doc/img/tfht01B_small.png)
+![TFHT02A top view](doc/gen/img/TFHT02-top.png)
+
+![TFHT02A bottom view](doc/gen/img/TFHT02-bottom.png)
 
 ### Schematics
 
-[![Schematics](/doc/gen/TFHT01-schematic.svg)](/doc/gen/TFHT02-schematic.pdf)
+[![Schematics](/doc/gen/TFHT02-schematic.svg)](/doc/gen/TFHT02-schematic.pdf)
 
 ## Usage in PX4 autopilot firmware
 
-The PX4 autopilot firmware supports the sensor. Multiple sensors can be connected to one autopilot. The measured data are immediately sent to the ground station and they are also logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT3X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1.
+The PX4 autopilot firmware supports the sensor. Multiple sensors can be connected to one autopilot. The measured data could be sent to the ground station and at the same time logged in the onboard ulog file. Sensor support can be enabled by setting the [SENS_EN_SHT4X](http://docs.px4.io/master/en/advanced_config/parameter_reference.html#SENS_EN_SHT3X) parameter to 1.
 
 
 ### Driver Commands Examples
 
 CLI usage example:
 
-    sht3x start -X
+    sht4x start -X
 
 Start the sensor driver on the external bus
 
-    sht3x status
+    sht4x status
 
 Print driver status
 
-    sht3x values
+    sht4x values
 
 Print the last measured values
 
-    sht3x reset
+    sht4x reset
 
 Reinitialize senzor, reset flags
 
 ### PX4 Driver Usage
 
 ```
-sht3x <command> [arguments...]
+sht4x <command> [arguments...]
  Commands:
    start
      [-I]        Internal I2C bus(es)
@@ -103,10 +99,4 @@ sht3x <command> [arguments...]
 
 ## Usage in Ardupilot firmware
 
-In the Ardupilot firmware, the corresponding sht3x driver for TFHT01 is currently missing. The contributions are welcomed.
-
-## Resources
-
-  * [ThunderFly TFHT01 documentation page](https://docs.thunderfly.cz/avionics/TFHT01/)
-  * [Store](https://www.tindie.com/products/26354/)
-  * [Contact details](https://www.thunderfly.cz/contact-us.html)
+In the Ardupilot firmware, the corresponding sht4x driver for TFHT02 is currently missing. The contributions are welcomed.
