@@ -19,13 +19,13 @@ The TFHT02 is commercially available from [ThunderFly s.r.o.](https://www.thunde
 
 | Parameter | Value | Description |
 |-----------|-------|-------------|
-| Sensing element | [SHT45](https://sensirion.com/media/documents/213E6A3B/63A5A569/Datasheet_SHT3x_DIS.pdf) | Other possible sensors are SHT40 or SHT41 |
+| Sensing element | [SHT45](https://sensirion.com/media/documents/33FD6951/662A593A/HT_DS_Datasheet_SHT4x.pdf) | Other possible sensors are SHT40 or SHT41 |
 | Typical accuracy | 1 %RH and 0.1 °C | |
 | Repeatability | 0.15 %RH , 0.08 °C | The stated repeatability is 3 times the standard deviation (3σ) of multiple consecutive measurements at constant ambient conditions. |
 | Operating temperature range| 0 °C - +65 °C | Sensor physically measures in range -40°C to +120°C with reduced accuracy |
 | Operating humidity range| 0-100 % | At humidity above 80% the performance of the sensor could be degraded in case of prolonged periods |
 | I2C connector | 4-pin JST-GH | The second connector could be installed on the opposite side |
-| I2C address | 0x44 default | By switching of JP1 is possible change address to 0x45 |
+| I2C address | 0x44 | |
 | Storage temperature range| -20 °C - +40 °C |  |
 | Operational input voltage | 3.6 - 5.4V | Overvoltage is internally protected by zener diode |
 | Mass | 2 g | PCB without cabling |
